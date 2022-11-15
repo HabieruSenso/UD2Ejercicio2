@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.utad.ud2ejercicio2">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="tema7"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UD2Ejercicio2"
+        tools:targetApi="31">
+        <activity
+            android:label="pantalla3"
+            android:name=".ThirdScreen"
+            android:exported="false"
+            android:parentActivityName=".FirstScreen"/>
+        <activity
+            android:label="pantalla2"
+            android:name=".SecondScreen"
+            android:exported="false"
+            android:parentActivityName=".SecondScreen" />
+        <activity
+            android:label="pantalla1"
+            android:name=".FirstScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
